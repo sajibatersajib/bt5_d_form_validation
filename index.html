@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link start here -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <title>bootstrap5</title>
+    <!-- css link start here -->
+</head>
+<body>
+<!-- simple form knowledge start here -->
+    <div class="container">
+      <div class="heading">
+        <h1>Form</h1>
+      </div>
+        <form>
+            <div class="mb-3 mt-3">
+              <label for="email1" class="form-label">Email address</label>
+              <input type="email" class="form-control email1" id="email1" name="email1" list="datalistOptions" required>
+              <datalist id="datalistOptions">
+                <option value="rahim@gmail.com">
+                <option value="karim@gmail.com">
+                <option value="fahim@gmail.com">
+              </datalist>
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="Password1" class="form-label Password1">Password</label>
+              <input type="password" class="form-control Password1" id="passwordHelpBlock" name="Password1" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="o_name" class="form-label s_name">Others</label>
+                <input type="text" class="form-control o_name" id="o_name" name="o_name" value="Disabled input" disabled="disabled">
+              </div>
+               
+            <div class="mb-3">
+                <label for="textarea1" class="form-label">Describe your Work Experience</label>
+                <textarea class="form-control textarea1" id="textarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="formfilemultiple" class="form-label">Photos</label>
+              <input class="form-control formfilemultiple" type="file" id="formfilemultiple" multiple>
+            </div>
+            
+            <div class="mb-3">
+              <label for="gender" class="form-label gender">Gender</label>
+              <select class="form-select gender" id="gender" name="gender">
+                <option selected>Select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Others</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="colourinput" class="form-label colourinput">Color picker</label>
+              <input type="color" class="form-control form-control-color colourinput" id="colourinput" value="#563d7c" title="Choose your color">
+            </div>
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input check1" id="check1" name="check1">
+              <label class="form-check-label check1" for="check1">Check me out</label>
+            </div>
+            
+
+            <button type="submit" class="btn btn-info">Submit</button>
+
+          </form>
+    </div>
+<!-- simple form knowledge end here -->
+
+<!-- form layout -->
+     <section class="f_layout">
+      <div class="container">
+        <h1>Form Layout</h1>
+        <form class="row g-3">
+
+          <div class="col-sm-6">
+            <label for="inputemail" class="form-label inputemail">Email</label>
+            <input type="email" class="form-control inputemail" id="inputemail">
+          </div>
+
+          <div class="col-sm-6">
+            <label for="inputpassword" class="form-label inputpassword">Password</label>
+            <input type="password" class="form-control inputpassword" id="inputpassword" name="inputpassword">
+          </div>
+
+          <div class="col-sm-12">
+            <label for="inputaddress1" class="form-label inputaddress1">Address</label>
+            <input type="text" class="form-control inputaddress1" id="inputaddress1" placeholder="1204 dhanmondi dhaka " name="inputaddress1">
+          </div>
+
+          <div class="col-sm-12">
+            <label for="inputaddress2" class="form-label inputaddress2">Address 2</label>
+            <input type="text" class="form-control inputaddress2" id="inputaddress2" name="inputaddress2" placeholder="Apartment, Home, or floor">
+          </div>
+
+          <div class="col-sm-6">
+            <label for="inputcity" class="form-label inputcity">City</label>
+            <input type="text" class="form-control inputcity" id="inputcity">
+          </div>
+
+          <div class="col-sm-4">
+            <label for="inputstate" class="form-label inputstate">State</label>
+            <select id="inputstate" class="form-select inputstate">
+              <option selected>Choose...</option>
+              <option>...</option>
+              <option>A</option>
+              <option>B</option>
+              <option>D</option>
+            </select>
+          </div>
+
+          <div class="col-sm-2">
+            <label for="inputzip" class="form-label inputzip">Zip</label>
+            <input type="text" class="form-control inputzip" id="inputzip" name="inputzip">
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+            
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </div>
+     </section>
+<!-- form layout -->
+
+<!-- form Validation start here-->
+     <section class="f_validation">
+      <div class="container">
+
+        <h1>Form Validation</h1>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <!-- first name -->
+          <div class="col-md-6">
+            <label for="f_name" class="form-label">First name</label>
+            <input type="text" class="form-control" id="f_name" placeholder="Enter Your first name" name="f_name" required>
+
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+
+            <div class="invalid-feedback">
+              Enter Your first name.
+            </div>
+          </div>
+
+          <!-- last name -->          
+          <div class="col-md-6">
+            <label for="l_name" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="l_name" placeholder="Enter Your Last name" name="l_name" required>
+
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+
+            <div class="invalid-feedback">
+              Enter Your Last name.
+            </div>
+          </div>
+          <!-- username -->
+          <div class="col-md-8">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="username" name="username" placeholder="sajibater" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Enter Your username.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+
+        </form>
+      </div>
+     </section>
+<!-- form Validation end here-->
+
+    <!-- js link start here -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- js link end here -->
+</body>
+</html>
